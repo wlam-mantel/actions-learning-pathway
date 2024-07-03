@@ -1,0 +1,8 @@
+name: add-markdown
+on: push
+jobs:
+  markdown-example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Adding markdown
+        run: echo '### Hello world! 🚀' >> $GITHUB_STEP_SUMMARY
